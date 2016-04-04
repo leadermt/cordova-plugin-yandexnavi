@@ -27,8 +27,8 @@
 - (void)open: (CDVInvokedUrlCommand*)command {
     NSString *lat_from = [NSString stringWithFormat:@"%@", [command argumentAtIndex:0]];
     NSString *lon_from = [NSString stringWithFormat:@"%@", [command argumentAtIndex:1]];
-    NSString *lat_to = [NSString stringWithFormat:@"%@", [command argumentAtIndex:3]];
-    NSString *lon_to = [NSString stringWithFormat:@"%@", [command argumentAtIndex:4]];
+    NSString *lat_to = [NSString stringWithFormat:@"%@", [command argumentAtIndex:2]];
+    NSString *lon_to = [NSString stringWithFormat:@"%@", [command argumentAtIndex:3]];
 
     NSString *from = @"";
     if([lat_from length] != 0 && [lon_from length] != 0)
